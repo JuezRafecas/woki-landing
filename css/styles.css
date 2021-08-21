@@ -1,0 +1,238 @@
+/*********GENERAL*************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --c1: #606060;
+    --c2: #7c2afb;
+    --c3: #71cbf4;
+    --c4: #fff;
+    --c5: #1d86fa;
+    --c6: #196bfa;
+    --c7: #D0D0D0;
+    --c8: #0076FF;
+    --c9: #000;
+    --c10: #009DFF;
+    --c11: #5C2BFF;
+    --c12: #12B6FF;
+}
+body {
+    font: normal normal 1.05rem/1.3rem 'Montserrat', sans-serif;
+    color: var(--c8);
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: currentColor;
+}
+a:hover{
+    color: var(--c9);
+}
+:focus {
+    outline: none;
+}
+
+/******HEADER*********/
+div.encabezado{
+    height: 1.25rem;
+}
+header{
+    background-color: #fff;
+    border-radius: 15rem;
+    margin: 0rem 3rem;
+    position: sticky;
+    top: 0rem;
+    -webkit-box-shadow: 0 0 5px 2px #D0D0D0;
+    -moz-box-shadow: 0 0 5px 2px #D0D0D0;
+    box-shadow: 0 0 5px 2px #D0D0D0;
+    z-index: 10;
+}
+header nav{
+    align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+    text-align: center;
+    width: 100%;
+}
+nav a img{
+    height: 3rem;
+    width: auto;
+}
+nav ul {
+    align-items: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav ul li#header-partner{
+    padding-bottom: 1.6rem;
+    text-align: center;
+    margin-left: auto;
+}
+
+nav ul li#header-partner span{
+    color: var(--c1);
+    display: block;
+    font-size: 0.7rem;
+}
+
+nav ul li#header-partner a{
+    width: 13rem;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--c4);
+    background: linear-gradient(180deg, #12A8FF, #7C2BFF);
+    border-radius: 50px;
+    display: block;
+}
+li#header-partner a:hover{
+    background:var(--c9);
+}
+
+/******Hero***********/
+.hero{
+    background: linear-gradient(180deg, #fff, var(--c7));
+}
+.hero-img{
+    position: relative;
+    top: -8rem;
+    width: 100vw;
+}
+.bienvenida{
+    align-items: flex-start;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+    width: 75%;
+}
+.bienvenida h1{
+    font-size: 3.55rem;
+    line-height: 4.2rem;
+    margin-bottom: 2rem;
+}
+.bienvenida h1 strong{
+    color: var(--c10);
+}
+.bienvenida p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--c9);
+    line-height: 1.8rem;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.bienvenida h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 80%;
+}
+.hero-celu{
+    position: relative;
+    top: -5rem;
+    width: 40%;
+}
+.google-play{
+    margin-top: 8rem;
+    margin-right: 2rem;
+    width: 11rem;
+}
+.app-store{
+    width: 11rem;
+}
+/*******Main**********/
+main{
+    background-color: var(--c4);
+}
+/*******Funcionalidades*******/
+/*******Banner promocional***********/
+.banner-promocional{
+    background-color: var(--c4);
+    color: var(--c11);
+    position: relative;
+    top: -8.3rem;
+    text-align: center;
+    padding: 4rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+/*******MesaYa!******/
+section.MesaYa{
+    border-radius: 5rem;
+    -webkit-box-shadow: 0 0 5px 2px #D0D0D0;
+    -moz-box-shadow: 0 0 5px 2px #D0D0D0;
+    box-shadow: 0 0 5px 2px #D0D0D0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0rem 5rem 5rem 5rem;
+    padding: 2rem 15rem 0rem 0.2rem;
+}
+section.MesaYa img{
+    border-radius: 5rem;
+    width: 48%;
+}
+.presentacion-mesaya{
+    text-align: justify;
+    padding-left: 5rem;
+    position: relative;
+    top: 5rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.presentacion-mesaya h2{
+    color: var(--c8);
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 500;
+}
+.presentacion-mesaya h3{
+    color: var(--c12);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.presentacion-mesaya p{
+    color: #AFAFAF;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+.ultimo-parrafo-my{
+    position: relative;
+    top: -2.7rem;
+}
+.presentacion-mesaya p strong{
+    font-weight: 500;
+}
+.presentacion-mesaya p strong.logoMesaya{
+    font-weight: 500;
+    font-style: italic;
+}
