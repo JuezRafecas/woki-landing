@@ -17,6 +17,9 @@
     --c10: #009DFF;
     --c11: #5C2BFF;
     --c12: #12B6FF;
+    --c13: #7C2BFF;
+    --c14: #915AFF;
+    --c15: #707070;
 }
 body {
     font: normal normal 1.05rem/1.3rem 'Montserrat', sans-serif;
@@ -187,18 +190,20 @@ section.MesaYa{
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    margin: 0rem 5rem 5rem 5rem;
-    padding: 2rem 15rem 0rem 0.2rem;
+    margin: 0rem 5rem 0rem 5rem;
+    padding: 0rem 5rem 0rem 2rem;
 }
 section.MesaYa img{
     border-radius: 5rem;
-    width: 48%;
+    width: 55%;
+    position: relative;
+    top: 4.1rem;
 }
 .presentacion-mesaya{
-    text-align: justify;
+    text-align: left;
     padding-left: 5rem;
     position: relative;
-    top: 5rem;
+    top: 10rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -220,10 +225,10 @@ section.MesaYa img{
     line-height: 2.5rem;
 }
 .presentacion-mesaya p{
-    color: #AFAFAF;
+    color: var(--c15);
     font-size: 1.5rem;
     font-weight: 300;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 .ultimo-parrafo-my{
     position: relative;
@@ -235,4 +240,190 @@ section.MesaYa img{
 .presentacion-mesaya p strong.logoMesaya{
     font-weight: 500;
     font-style: italic;
+    color: var(--c8);
+}
+
+/*********Reservas************/
+section.reservas{
+    background-color: #fff;
+    border-radius: 5rem;
+    -webkit-box-shadow: 0 0 5px 2px #D0D0D0;
+    -moz-box-shadow: 0 0 5px 2px #D0D0D0;
+    box-shadow: 0 0 5px 2px #D0D0D0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0rem 5rem 4rem 5rem;
+    padding: 0rem 2rem 0rem 0.2rem;
+    position: relative;
+    top: 2rem;
+    opacity: 1;
+}
+.presentacion-reservas{
+    text-align: left;
+    padding-left: 5rem;
+    position: relative;
+    top: 10rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.presentacion-reservas h2{
+    color: var(--c13);
+    font-size: 4rem;
+    font-weight: 600;
+}
+.presentacion-reservas h3{
+    color: var(--c14);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.presentacion-reservas p{
+    color: var(--c15);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.presentacion-reservas p strong{
+    font-weight: 500;
+}
+.presentacion-reservas p span{
+    color: #B38DFD;
+}
+section.reservas img{
+    border-radius: 5rem;
+    width: 55%;
+    position: relative;
+    top: 4.3rem;
+}
+
+/*******Alertas***********/
+section.alertas{
+    border-radius: 5rem;
+    background-color: white;
+    -webkit-box-shadow: 0 0 5px 2px #D0D0D0;
+    -moz-box-shadow: 0 0 5px 2px #D0D0D0;
+    box-shadow: 0 0 5px 2px #D0D0D0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0rem 5rem;
+    padding: 0rem 5rem 0rem 2rem;
+    position: relative;
+}
+section.alertas img{
+    border-radius: 5rem;
+    width: 55%;
+    position: relative;
+    top: 4.1rem;
+}
+.presentacion-alertas{
+    text-align: left;
+    padding-left: 5rem;
+    position: relative;
+    top: 10rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.presentacion-alertas h2{
+    color: var(--c9);
+    font-size: 4rem;
+    font-weight: 500;
+}
+.presentacion-alertas h3{
+    color: var(--c13);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.presentacion-alertas p{
+    color: var(--c15);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+.presentacion-alertas p strong{
+    font-weight: 500;
+}
+.presentacion-alertas p span{
+    color: #B38DFD;
+}
+.presentacion-alertas p span strong{
+    font-weight: 500;
+}
+
+/******Menu online*********/
+section.menu-online{
+    background-color: #fff;
+    border-radius: 5rem;
+    -webkit-box-shadow: 0 0 5px 2px #D0D0D0;
+    -moz-box-shadow: 0 0 5px 2px #D0D0D0;
+    box-shadow: 0 0 5px 2px #D0D0D0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0rem 5rem 4rem 5rem;
+    padding: 0rem 2rem 0rem 0.2rem;
+    position: relative;
+    top: 2rem;
+}
+.presentacion-menu-online{
+    text-align: left;
+    padding-left: 5rem;
+    position: relative;
+    top: 10rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.presentacion-menu-online h2{
+    color: var(--c9);
+    font-size: 4rem;
+    font-weight: 500;
+}
+.presentacion-menu-online h3{
+    color: var(--c8);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+.presentacion-menu-online p{
+    color: var(--c15);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.presentacion-menu-online p strong{
+    font-weight: 500;
+}
+.presentacion-menu-online p span{
+    color: #009DFF;
+}
+section.menu-online img{
+    border-radius: 5rem;
+    width: 55%;
+    position: relative;
+    top: 4.3rem;
 }
