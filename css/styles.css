@@ -989,7 +989,10 @@ footer p a:hover {
     width: 40vw;
     max-width: 40em;
     position: relative;
-    top: 3.5em;
+    top: 5.5em;
+  }
+  .container-card img.menu-img {
+    top: 3em;
   }
   .mesa-ya, .alertas {
         grid-template-areas: "img header" "img mini-header" "img parr" "img parr";
