@@ -1,0 +1,54 @@
+.background-header
+    position: sticky
+    top: 0em
+    z-index: 10
+header   
+    background-color: $cl-white
+    border-radius: 15em
+    margin: 0rem 3em
+    position: sticky
+    top: 0em
+    box-shadow: 0 0 5px 2px $sw-gray
+    z-index: 10
+    padding: 0.3em 0em
+    nav
+        align-items: center
+        display: flex
+        justify-content: space-between
+        padding: 0.2em 0.2em 0.2em 2em
+        text-align: center
+        img
+            height: 3em
+        ul
+            list-style: none
+            display: flex
+            align-items: center
+            gap: 1.5em
+            font-size: $font-rg
+            font-weight: 500
+            justify-content: space-between
+            margin-right: 0.5em
+            li:hover
+                cursor: pointer
+            li.register
+                background: $cl-light-blue
+                box-shadow: 0 2px 2px 1px $sw-gray
+                border-radius: 15em
+                width: 10em
+                padding: 0.4em 0em
+                &:hover
+                    background: $cl-strong-blue
+                a
+                    color: $cl-white
+            li button
+                display: none
+            li span.span-restaurant
+                position: relative
+                top: -2.3em
+                left: 15.1em
+                font-size: 0.7em
+                width: 20em
+                color: #606060
+                font-weight: 400
+.overlay
+    display: none

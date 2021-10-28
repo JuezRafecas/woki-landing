@@ -1,0 +1,325 @@
+//Medias para el header con max-width
+@media screen and (max-width: 1100px)
+    header nav ul li span.span-restaurant
+                        display: none
+@media screen and (max-width: 1000px)
+    header
+        border-radius: 1em
+        padding: 0em 0em 0.2em 0em
+        margin: auto 0.2em
+        nav
+            flex-direction: column
+            gap: 1em
+            ul
+                justify-content: space-between
+                li
+                    &.register
+                        width: 12em
+//Medias para el header con max-width
+@media screen and (max-width: 700px)
+    .background-header
+        z-index: 101
+    header
+        padding: 0
+        z-index: 101
+        nav
+            flex-direction: row
+            justify-content: space-between
+            padding: 0.5em
+            ul
+                li button
+                    display: inline-block
+                    font-weight: 900
+                    font-size: $font-big
+                    color: $cl-light-blue
+                li
+                    display: none
+    .overlay
+        display: block
+        a
+            display: inline-block
+            position: relative
+            text-align: center
+            text-decoration: none
+            font-size: 20px
+            overflow: hidden
+            top: 5px
+    li.burger
+        display: block
+    .button_container
+        position: fixed
+        top: 0.6em
+        right: 5%
+        height: 35px
+        width: 35px
+        cursor: pointer
+        transition: opacity .25s ease
+        border: none
+        background: #ffffff
+        &:hover
+            opacity: .7
+        &.active
+            .top
+                transform: translateY(11px) translateX(0) rotate(45deg)
+                background: $cl-light-blue
+            .middle
+                opacity: 0
+                background: $cl-light-blue
+            .bottom
+                transform: translateY(-11px) translateX(0) rotate(-45deg)
+                background: $cl-light-blue
+        span
+            background: $cl-light-blue
+            border: none
+            height: 5px
+            width: 100%
+            position: absolute
+            top: 0
+            left: 0
+            transition: all .35s ease
+            cursor: pointer
+            &:nth-of-type(2)
+                top: 11px
+            &:nth-of-type(3)
+                top: 22px
+    .overlay
+        position: fixed
+        background: $cl-white
+        top: 0
+        left: 0
+        width: 100%
+        height: 0%
+        opacity: 0
+        visibility: hidden
+        transition: opacity .35s, visibility .35s, height .35s
+        overflow: hidden
+        z-index: 100
+        &.open
+            opacity: .9
+            visibility: visible
+            height: 100%
+            li
+                animation: fadeInRight .5s ease forwards
+                animation-delay: .35s
+                &:nth-of-type(2)
+                    animation-delay: .4s
+                &:nth-of-type(3)
+                    animation-delay: .45s
+                &:nth-of-type(4)
+                    animation-delay: .50s
+        nav
+            position: relative
+            height: 70%
+            top: 50%
+            transform: translateY(-50%)
+            font-size: 50px
+            font-weight: 400
+            text-align: center
+            ul
+                list-style: none
+                padding: 0
+                margin: 0 auto
+                display: inline-block
+                position: relative
+                height: 100%
+                li
+                    display: block
+                    height: 25%
+                    height: calc(100% / 4)
+                    min-height: 50px
+                    position: relative
+                    opacity: 0
+                    &.register-mobile
+                        a
+                            background: $cl-strong-blue
+                            color: $cl-white
+                            border-radius: 1em
+                            padding: 0.2em 1em
+                    a
+                        display: block
+                        position: relative
+                        color: $cl-light-blue
+                        text-decoration: none
+                        overflow: hidden
+                        font-size: 0.65em
+
+@keyframes fadeInRight
+    0%
+        opacity: 0
+        left: 20%
+
+    100%
+        opacity: 1
+        left: 0
+
+@media screen and (min-width: 680px)
+    .banner-promocional
+        font-size: 2em
+    .container-card
+        h2
+            font-size: 4.5em
+        h3
+            font-size: 2.5em
+        p
+            font-size: 1.5em
+    .woki-filtros
+        h2
+            font-size: 3em
+    .appsistente
+        h2
+            font-size: 3.5em
+        p
+            font-size: 1.7em
+    footer
+        border-radius: 3em 3em 0em 0em
+        .flex-soporte
+            display: flex
+            flex-wrap: wrap
+            gap: 2em
+            align-items: flex-start
+            justify-content: space-between
+            padding: 2em
+@media screen and (min-width: 1000px)
+    section.hero
+        display: grid
+        grid-auto-columns: 1fr 
+        grid-template-columns: 0.9fr 1.1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+        gap: 0px 0px
+        grid-template-areas: "titulo imagen" "titulo imagen" "parrafo imagen" "h3 imagen" "disponible imagen" "stores imagen"
+        align-items: start
+        text-align: left
+        padding: 0rem 3em
+        height: 40em
+        h1
+            grid-area: titulo
+            font-size: 3.3em
+            align-self: center
+        p.hero-p
+            grid-area: parrafo
+            width: 21em
+        h3
+            grid-area: h3
+            align-self: center
+        p.disponible-stores
+            grid-area: disponible
+            align-self: end
+        div
+            grid-area: stores
+            align-self: center
+            a
+                img
+                    width: 10em
+        img
+            grid-area: imagen
+            width: 30em
+            justify-self: start
+            align-self: center
+    .container-card
+        box-shadow: 0px -4px 3px -2px darkgray
+        border-radius: 5em 
+        margin: 1em 0em
+        display: grid
+        grid-auto-columns: 1fr
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        gap: 0px 0px
+        position: relative
+        background: white
+        justify-content: left
+        align-items: end
+        text-align: left
+        padding: 2em 5em
+        margin: 3em
+        h2
+            grid-area: header
+            font-size: 3em
+        h3
+            grid-area: mini-header
+            font-size: 1.5em
+        p
+            grid-area: parr
+            font-size: 1.2em
+        img
+            grid-area: img
+            width: 40vw
+            max-width: 40em
+            position: relative
+            top: 3.5em
+    .mesa-ya, .alertas
+        grid-template-areas: "img header""img mini-header""img parr""img parr"
+    .reservas, .menu-online
+        grid-template-areas: "header img""mini-header img""parr img""parr img"  
+    .woki-filtros
+        border-radius: 3em
+        box-shadow: 0px -2px 6px darkgray
+        margin: 3em 0em 1em 0em
+        .filtros
+            gap: 1em 15vw
+            article
+                width: 20vw
+                max-width: 20vw
+    .appsistente
+        margin: 4em 0em 10em 0em
+        height: 45em
+        .container-appsistente
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 0em
+            position: relative
+            top: -5em
+            article
+                width: 25vw
+                height: 22em
+                gap: 1em
+                &.appsistente-1
+                    order: 0
+                    align-items: flex-start
+                    justify-content: flex-start
+                    text-align: left
+                &.appsistente-2
+                    order: 2
+                    align-items: flex-end
+                    justify-content: flex-start
+                    text-align: right
+            img
+                order: 1
+                position: relative
+                top: 10em
+
+
+@media screen and (min-width: 1350px)
+    div.background-header
+        background: #D0D0D040
+    section.hero
+        background-image: url(../img/hero-fondo.svg)
+        background-position-y: 60%
+        background-color: #D0D0D040 
+    .container-card
+        p
+            line-height: 2em
+        h2
+            font-size: 4.5em
+        h3
+            font-size: 2.5em
+        p
+            font-size: 1.5em
+    .appsistente
+        h2
+            font-size: 4em
+        .container-appsistente
+            article
+                position: relative
+                width: 30vw
+                height: 15em
+                p
+                    width: 25vw
+                img
+                    display: block
+                    position: absolute
+                    top: 0.5em
+                    right: 1em
+                    width: 3.5em
+                    &.icon-left
+                        left: 1em

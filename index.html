@@ -2,209 +2,193 @@
 <html lang="en">
 
 <head>
-    <title>Woki · Tu Nuevo Appsistente de Salidas</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woki · Tu Nuevo Appsistente de Salidas</title>
     <link rel="icon" type='image/png' href="img/favicon.png">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        #loader {
-            border: 12px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 12px solid #444444;
-            width: 70px;
-            height: 70px;
-            animation: spin 1s linear infinite;
-        }
-          
-        @keyframes spin {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-          
-        .center {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-    </style>
 </head>
+
 <body>
-    <div id="loader" class="center"></div>
-    <div id="nav" class="hero">
-        <div class="encabezado"></div>
-        <header>
-            <!-- Nav bar -->
-            <nav>
-                <a href="index.html" id="Logo"><img src="img/Logo.svg" alt="Logo woki"></a>
-                <ul>
-                    <li><a href="#funcionalidades">Funcionalidades</a></li>
-                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                    <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Ingresar</a></li>
-                    <li id="header-partner">
-                        <span>¿Tenés un restaurante?</span>
-                        <a class="boton" href="partners/index.html">Hacete Partner</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Hero -->
-        <img class="hero-img" src="img/hero-fondo.svg" alt="Fondo">
-        <section class="bienvenida">
-            <article class="presentacion">
+    <div class="encabezado"></div>
+    <div class="background-header">
+    <header class="sticky">
+        <nav>
+            <a href="#"><img src="img/Logo.svg" alt="Logo Woki Clientes"></a>
+            <ul>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#footer">Quiénes somos</a></li>
+                <li><a href="#footer">FAQs</a></li>
+                <li><span class="span-restaurant">¿Tenés un restaurante?</span></li>
+                <li class="register">
+                    <a href="https://partners.woki.ar" target="_blanck">Hacete
+                        Partner</a>
+                </li>
+                <li class="burger">
+                    <button id="toggle" class="button_container">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div id="overlay" class="overlay">
+        <nav class="overlay-menu">
+            <ul class="mobile-menu">
+                <li><a class="funcionalidades-mobile" href="#funcionalidades">Funcionalidades</a></li>
+                <li><a class="funcionalidades-mobile-1"  href="#footer">Quiénes somos</a></li>
+                <li><a class="funcionalidades-mobile-2" href="#footer">FAQs</a></li>
+                <li class="register-mobile"><a href="https://partners.woki.ar">Hacete Partner</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="capaInicial">
+        <div class="capaSuperior">
+            <section class="hero">
                 <h1>Conocé a <strong>Woki</strong>, tu appsistente de salidas.</h1>
-                <p>Enterate en tiempo real la disponibilidad de mesas de los mejores locales gastronómicos, reservá con
-                    un sólo click. </p>
+                <img class="hero-celu" src="img/hero-celu.svg" alt="Ejemplo celular">
+                <p class="hero-p">Enterate en tiempo real la disponibilidad de mesas de los mejores locales gastronómicos, <span>reservá con un sólo click.</span></p>
                 <h3>Dedicate solamente a disfrutar.</h3>
-                <a href="#"><img class="google-play" src="img/google-play.svg" alt="Descarga Woki en Google play"></a>
-                <a href="#"><img class="app-store" src="img/app-store.svg" alt="Descargar Woki en App store"></a>
-            </article>
-            <img class="hero-celu" src="img/hero-celu.svg" alt="Ejemplo celular">
-        </section>
-        <main>
-            <!-- Banner promocional  -->
-            <section class="banner-promocional">
-                Woki resuelve tu salida!
-            </section>
-            <!-- Funcionalidades  -->
-            <section id="funcionalidades">
-            <!-- MesaYa!  -->
-            <section class="MesaYa">
-                <img src="img/funcionalidades-mesaya.svg" alt="Funcionalidades de MesaYa!">
-                <article class="presentacion-mesaya">
-                    <h2>Mesa Ya!</h2>
-                    <h3>Encontrá mesas libres cerca de tu ubicación</h3>
-                    <p>Saliste a cenar y no encontrás mesa: <strong>necesitás Woki sí o sí.</strong></p>
-                    <p class="ultimo-parrafo-my">Usá la función <strong class="logoMesaya">MesaYa!®</strong> para
-                        encontrar mesas disponibles cerca de tu ubicación y empezá a disfrutar.</p>
-                </article>
-            </section>
-            <!-- Reservas  -->
-            <section class="reservas">
-                <article class="presentacion-reservas">
-                    <h2>Reservas</h2>
-                    <h3>Hacé tu reserva desde el móvil de forma simple</h3>
-                    <p>Con <strong>Woki</strong> podés reservar tu mesa en el restaurante que quieras, incluso donde
-                        sentarte: en el patio,
-                        salón, vereda o terraza. <span>Resolvelo directamente desde la aplicación.</span></p>
-                </article>
-                <img src="img/funcionalidades-reservas.svg" alt="Funcionalidades de Reservas">
-            </section>
-            <!-- Alertas -->
-            <section class="alertas">
-                <img src="img/funcionalidades-alertas.svg" alt="Funcionalidades de alertas">
-                <article class="presentacion-alertas">
-                    <h2>Alertas</h2>
-                    <h3>Woki te avisa cuando tu mesa está lista</h3>
-                    <p>Esperá tu mesa donde quieras, <strong>Woki</strong> te avisa cuando tengas que aproximarte al
-                        local. Ya no más
-                        largas esperas en la puerta del restaurant o del bar, <span>aprovechá tu tiempo al máximo con
-                            <strong>Woki</strong></span></p>
-                </article>
-            </section>
-            <!-- Menu online -->
-            <section class="menu-online">
-                <article class="presentacion-menu-online">
-                    <h2>Menú online</h2>
-                    <h3>Explorá la carta de los restaurantes que quieras</h3>
-                    <p><strong>Woki</strong> te permite ver <span>donde sea y cuando quieras el menú</span> del restaurante que desees. Elegí de
-                        antemano las opciones que más te gusten, conocé los platos del día y explorá promociones y
-                        ofertas especiales.</p>
-                </article>
-                <img src="img/funcionalidades-menu-online.svg" alt="Funcionalidades de menu-online">
-            </section>
-        </section>
-        <!-- Filtros -->
-            <section class="woki-filtros">
-                <h2>Descubrí nuevos lugares</h2>
-                <h2>con los filtros de <strong>Woki</strong></h2>
-                <p>Filtrá de acuerdo a tus necesidades y descubrí <span>el lugar que buscás</span></p>
-                <div class="filtros">
-                    <article class="i-filtro">
-                        <img class="iconos-filtros-comidas" src="img/filtro1.svg" alt="Tipos de comida">
-                        <h4 class="titulo-filtros">Tipos de comida</h4>
-                        <p class="parrafo-filtros">Filtrá de acuerdo a tus sabores y tipos de cocina preferidos.
-                        </p>
-                    </article>
-                    <article class="i-filtro">
-                        <img class="iconos-filtros" src="img/filtro2.svg" alt="Horarios de atencion">
-                        <h4 class="titulo-filtros">Horarios de atención</h4>
-                        <p class="parrafo-filtros">Conocé qué restaurantes están abiertos con un click.</p>
-                    </article>
-                    <article class="i-filtro">
-                        <img class="iconos-filtros" src="img/filtro3.svg" alt="Rango de precios">
-                        <h4 class="titulo-filtros">Rango de precios</h4>
-                        <p class="parrafo-filtros">Opciones para todos los gustos y para todos los bolsillos.
-                        </p>
-                    </article>
-                    <article class="i-filtro">
-                        <img class="iconos-filtros" src="img/filtro4.svg" alt="Lugares mas cercanos">
-                        <h4 class="titulo-filtros">Lugares más cercanos</h4>
-                        <p class="parrafo-filtros">Navegá el mapa para visualizar opciones cercanas a tu ubicación.</p>
-                    </article>
-                    <article class="i-filtro">
-                        <img class="iconos-filtros" src="img/filtro5.svg" alt="Happy Hour">
-                        <h4 class="titulo-filtros">Happy Hour</h4>
-                        <p class="parrafo-filtros">Encontrá restaurantes con Happy Hour activo fácilmente</p>
-                    </article>
-                    <article class="i-filtro">
-                        <img class="iconos-filtros" src="img/filtro6.svg" alt="Celíacos y vegetarianos">
-                        <h4 class="titulo-filtros">Celíacos y vegetarianos</h4>
-                        <p class="parrafo-filtros">Ahora es más fácil buscar un restaurant que te caiga bien.</p>
-                    </article>
+                <p class="disponible-stores">Disponible en: </p>
+                <div class="links-stores">
+                    <a href="https://play.google.com/store/apps/details?id=ar.woki.cliente" target="_blank"><img class="google-play" src="img/google-play.svg" alt="Descarga Woki en Google play"></a>
+                    <a href="https://apps.apple.com/ar/app/woki/id1587034746" target="_blank"><img class="app-store" src="img/app-store.svg" alt="Descargar Woki en App store"></a>
                 </div>
             </section>
-        </main>
-        <img class="centrada" src="img/barrani.jpg" alt="Masladios">
+            <main>
+                <section class="banner-promocional">
+                    <h2><strong>Woki</strong> resuelve tu salida!</h2>
+                </section>
+                <section id="funcionalidades">
+                    <article class="container-card card-left mesa-ya">
+                        <h2>Mesa Ya!</h2>
+                        <h3>Encontrá mesas libres cerca de tu ubicación</h3>
+                        <img src="img/funcionalidades-mesaya.svg" alt="Funcionalidades de MesaYa!">
+                        <p>Saliste a cenar y no encontrás mesa: <strong>necesitás Woki sí o sí.</strong> <br>
+                            Usá la función <strong class="logoMesaYa">MesaYa!®</strong> para
+                            encontrar mesas disponibles cerca de tu ubicación y empezá a disfrutar.</p>
+                    </article>
+                    <article class="container-card card-right reservas">
+                        <h2>Reservas</h2>
+                        <h3>Hacé tu reserva desde el móvil de forma simple</h3>
+                        <img src="img/funcionalidades-reservas.svg" alt="Funcionalidades de Reservas">
+                        <p>Con <strong>Woki</strong> podés reservar tu mesa en el restaurante que quieras, incluso donde
+                            sentarte: en el patio,
+                            salón, vereda o terraza. <span>Resolvelo directamente desde la aplicación.</span></p>
+                    </article>
+                    <article class="container-card card-left alertas">
+                        <h2>Alertas</h2>
+                        <h3>Woki te avisa cuando tu mesa está lista</h3>
+                        <img src="img/funcionalidades-alertas.svg" alt="Funcionalidades de alertas">
+                        <p>Esperá tu mesa donde quieras, <strong>Woki</strong> te avisa cuando tengas que aproximarte al
+                            local. Ya no más
+                            largas esperas en la puerta del restaurant o del bar, <span>aprovechá tu tiempo al máximo con
+                                <strong>Woki</strong></span></p>
+                    </article>
+                    <article class="container-card card-right menu-online">
+                        <h2>Menú online</h2>
+                        <h3>Explorá la carta de los restaurantes que quieras</h3>
+                        <img src="img/funcionalidades-menu-online.svg" alt="Funcionalidades de menu-online">
+                        <p><strong>Woki</strong> te permite ver <span>donde sea y cuando quieras el menú</span> del restaurante que desees. Elegí de
+                            antemano las opciones que más te gusten, conocé los platos del día y explorá promociones y
+                            ofertas especiales.</p>
+                    </article>
+                </section>
+                <section class="woki-filtros">
+                    <h2>Descubrí nuevos lugares con los filtros de <strong>Woki</strong></h2>
+                    <p>Filtrá de acuerdo a tus necesidades y descubrí <span>el lugar que buscás</span></p>
+                    <div class="filtros">
+                        <article>
+                            <img class="small-filter" src="img/filtro1.svg" alt="Tipos de comida">
+                            <h4>Tipos de comida</h4>
+                            <p>Filtrá de acuerdo a tus sabores y tipos de cocina preferidos.
+                            </p>
+                        </article>
+                        <article>
+                            <img src="img/filtro2.svg" alt="Horarios de atencion">
+                            <h4>Horarios de atención</h4>
+                            <p>Conocé qué restaurantes están abiertos con un click.</p>
+                        </article>
+                        <article>
+                            <img src="img/filtro3.svg" alt="Rango de precios">
+                            <h4>Rango de precios</h4>
+                            <p>Opciones para todos los gustos y para todos los bolsillos.
+                            </p>
+                        </article>
+                        <article>
+                            <img src="img/filtro4.svg" alt="Lugares mas cercanos">
+                            <h4>Lugares más cercanos</h4>
+                            <p>Navegá el mapa para visualizar opciones cercanas a tu ubicación.</p>
+                        </article>
+                        <article>
+                            <img src="img/filtro5.svg" alt="Happy Hour">
+                            <h4>Happy Hour</h4>
+                            <p>Encontrá restaurantes con Happy Hour activo fácilmente</p>
+                        </article>
+                        <article>
+                            <img class="small-filter" src="img/filtro6.svg" alt="Celíacos y vegetarianos">
+                            <h4>Celíacos y vegetarianos</h4>
+                            <p>Ahora es más fácil buscar un restaurant que te caiga bien.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="appsistente">
+                    <h2><strong>Tu appsistente</strong> de salidas</h2>
+                    <p>Conocé una nueva forma de planificar tus salidas de la mano de <strong>Woki</strong></p>
+                    <div class="container-appsistente">
+                    <img src="img/woki-feliz.png" alt="Woki Feliz">
+                    <article class="appsistente-1">
+                        <h3>Vista de mapa</h3>
+                        <p>Navega y descubrí toda la oferta gastronómica que tiene para ofrecer tu ciudad</p>
+                        <img class="icono-movil" src="img/icon-location.png" alt="Ubicacion">
+                    </article>
+                    <article class = "appsistente-2">
+                        <h3>Demora en tiempo real</h3>
+                        <p>Tu tiempo vale, por eso te damos la demora en tiempo real de toda la oferta gastronomica</p>
+                        <img class="icono-movil icon-left" src="img/icon-reloj.png" alt="Demora">
+                    </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="mainFooter">
+        </div>
     </div>
-    <footer>
-        <a href="#nav"><img src="img/logo-azulyblanco.svg" alt="Logo woki"></a>
-        <div class="vl"></div>
-        <dl>Contacto
-            <dt><br> Comunicate con nosotros</dt>
-            <dt><br>Depto. comercial</dt>
-            <dd><a href="mailto:partners@woki.ar">partners@woki.ar</a> <br>
-                <a href="tel:2236843654">2236843654</a></dd>
-            <dt><br> Depto. Técnico</dt>
-            <dd><a href="mailto:soporte@woki.ar">soporte@woki.ar</a> <br>
-                <a href="tel:2236843654">2236843654</a></dd>
-        </dl>
-        <div class="vl"></div>
-        <dl>Redes
-            <dt><br> Buscanos en nuestras redes</dt>
-            <dd><br></dd>
-            <dd><a href="https://www.facebook.com/WokiOficial/" target="_blank">Facebook</a></dd>
-            <dd><a href="https://twitter.com/wokioficial" target="_blank">Twitter</a></dd>
-            <dd><a href="https://www.instagram.com/wokioficial/" target="_blank">Instagram</a></dd>
-            <dd><a href="https://www.youtube.com/channel/UCnGS8X2w3mGqAhhcq2nws7A" target="_blank">Youtube</a></dd>
-        </dl>
-        <div class="vl"></div>
-        <p><a href="#">Políticas de privacidad</a>
-            <br>
-            <a href="#">Términos y condiciones</a>
-        </p>
+    <footer id="footer">
+        <a href="#"><img src="img/logo-azulyblanco.svg" alt="Logo woki"></a>
+        <div class="flex-soporte">
+            <dl>
+                Comunicate con nosotros
+                <dt><br>Depto. comercial</dt>
+                <dd><a href="mailto:partners@woki.ar">partners@woki.ar</a> <br>
+                    <a href="tel:2235945282">2236843654</a>
+                </dd>
+                <dt><br> Depto. Técnico</dt>
+                <dd><a href="mailto:soporte@woki.ar">soporte@woki.ar</a> <br>
+                    <a href="tel:2235945282">2236843654</a>
+                </dd>
+            </dl>
+            <dl>
+                Redes
+                <dt><br> Buscanos en nuestras redes</dt>
+                <dd><br></dd>
+                <dd><a href="https://www.facebook.com/WokiOficial/" target="_blank">Facebook</a></dd>
+                <dd><a href="https://twitter.com/wokioficial" target="_blank">Twitter</a></dd>
+                <dd><a href="https://www.instagram.com/wokioficial/" target="_blank">Instagram</a></dd>
+                <dd><a href="https://www.youtube.com/channel/UCnGS8X2w3mGqAhhcq2nws7A" target="_blank">Youtube</a></dd>
+            </dl>
+            <p><a href="#">Políticas de privacidad</a>
+                <br>
+                <br>
+                <a href="#">Términos y condiciones</a>
+            </p>
+        </div>
     </footer>
-    <script>
-        document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  "#loader").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-            }
-        };
-    </script>
+    <script src="./js/app.js" defer></script>
 </body>
 
 </html>
