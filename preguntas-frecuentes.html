@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only">
+    <title>Woki - Preguntas Frecuentes</title>
+    <link rel="icon" type='image/png' href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/preguntas-frecuentes.css">
+</head>
+
+<body>
+    <div class="encabezado"></div>
+    <header class="sticky">
+        <nav>
+            <a href="#"><img src="img/Logo.svg" alt="Logo Woki Clientes"></a>
+            <ul>
+                <li><a href="index.html">Funcionalidades</a></li>
+                <li><a href="#footer">Quiénes somos</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><span class="span-restaurant">¿Tenés un restaurante?</span></li>
+                <li class="register">
+                    <a href="https://partners.woki.ar" target="_blanck">Hacete
+                        Partner</a>
+                </li>
+                <li class="burger">
+                    <button id="toggle" class="button_container">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="overlay" class="overlay">
+        <nav class="overlay-menu">
+            <ul class="mobile-menu">
+                <li><a class="funcionalidades-mobile" href="index.html">Funcionalidades</a></li>
+                <li><a class="funcionalidades-mobile-1" href="#">Quiénes somos</a></li>
+                <li><a class="funcionalidades-mobile-2" href="#footer">FAQs</a></li>
+                <li class="register-mobile"><a href="https://partners.woki.ar">Hacete Partner</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h2 class="titulo">Preguntas frecuentes</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Por qué elegir WOKI para salir a comer?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Por primera vez, vas a poder tener la información en tiempo real del estado de todos los
+                        restaurantes y bares de la ciudad para que puedas organizar tu salida en segundos. Si se te
+                        ocurrió salir a último momento, con MesaYa! contás con la disponibilidad de cada lugar, para que
+                        sepas donde hay una mesa para vos y los tuyos, y en caso de que tu lugar elegido esté lleno, vas
+                        a conocer el tiempo de espera, con la posibilidad de ponerte en fila desde tu celular,
+                        permitiéndote esperar en cualquier lado, hasta que te llamen.
+                        Si estás organizando una salida con tiempo, usa WOKI Reservas, donde vas a asegurarte una mesa
+                        para tu lugar deseado en el día y horario que estás buscando.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo encuentro el lugar ideal para cualquier ocasión?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        En WOKI te permitimos aplicar un montón de filtros para que llegues en un segundo a tu lugar
+                        ideal. Una vez que tomaste la decisión, usá los servicios que te ofrece WOKI para concretar tu
+                        salida en el momento que más te guste para que tu única preocupación sea disfrutar.
+                        Dependiendo del día, nuestras prioridades para decidir cuál es el lugar ideal cambian
+                        completamente. El tiempo, los antojos de comer algo específico, el precio, la distancia o
+                        incluso reseñas de otros clientes, entre otras, son los detalles que hacen que terminemos
+                        eligiendo un lugar en vez de otro.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿En qué situación utilizo MesaYa!?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Muchas veces decidimos salir a comer o tomar algo a último momento y, más allá de que las
+                        salidas espontáneas terminan siendo las mejores, a todos nos gusta salir de casa sin perder
+                        nuestro valioso tiempo. MesaYa! convierte estas salidas en algo más placentero. Al momento de
+                        tomar la decisión de salir, WOKI te permite conocer si hay una mesa lista para vos en todos los
+                        lugares que te interesen o, en caso de que no haya, conocer la demora en tiempo real para cada
+                        uno de ellos. Basta de soportar las altas temperaturas en las esperas eternas por tener una
+                        mesa. Para que no tenga s que comer transpirado y molesto por haber hecho una cola interminable,
+                        WOKI te permite ponerte en fila en tu sector favorito del restaurante, desde tu celular, sin
+                        nunca tener que ir hasta la puerta. Esto te da la comodidad de esperar tu mesa de la forma que
+                        más te guste, ya sea, paseando, escuchando música en el auto mientras llueve o simplemente
+                        relajarte sin tener que estar en una fila en la vereda. Y cuando está lista, WOKI te llama para
+                        que entres.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿En qué situación utilizo reservas?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Hacer reservas para salir a comer permite asegurarnos una mesa en el lugar que queremos a la
+                        hora que deseamos. Con WOKI Reservas se puede solicitar una reserva en cuestión de segundos.
+                        Este servicio te permite conocer en tiempo real, la disponibilidad para cada día, horario y
+                        sector de los todos lugares adheridos, para que puedas elegir el que más te gusta y así,
+                        asegurarte un lugar automáticamente sin tener que salir de la aplicación. Llamar a los
+                        restaurantes uno por uno para saber cual tiene disponibilidad, buscar los teléfonos en la web y
+                        escuchar varias veces el contestador de los teléfonos fijos, son algunas de las cosas que con
+                        WOKI Reservas, se van a convertir en recuerdos del pasado.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Por qué se terminaron las filas con WOKI?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Hacer filas es agotador y causa molestia en cualquier salida o evento. Pero ¿Qué pasa si te
+                        decimos que existe una herramienta con la que podés esperar tu mesa desde el lugar que quieras,
+                        haciendo lo que te guste?. Sin regalar tu valioso tiempo, todo esto puede solucionartelo la
+                        nueva forma de hacer filas que ofrece WOKI. Es una herramienta imprescindible para mantener
+                        distanciamiento de una forma divertida, que te permite ir al establecimiento únicamente cuando
+                        WOKI te llama, a través de una notificación para avisarte que tu mesa está lista evitando así,
+                        todo tipo de aglomeramiento.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Por qué tengo que estar dentro de un cierto radio alrededor del establecimiento para solicitar
+                        MesaYa!?
+
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Uno de los principios sobre los cuales fue concebido WOKI es el de crear una herramienta que
+                        beneficie tanto a los clientes como a los comercios gastronómicos a la vez. Para cumplirlo,
+                        necesitamos asegurar que cada cliente que esté en la fila a través de WOKI, llegue a tiempo al
+                        establecimiento cuando su mesa esté lista, y de esta manera lograr una salida armoniosa y
+                        placentera. Es por eso que para esperar tu mesa, deberás permanecer dentro de un radio
+                        establecido por el comercio, y que al momento que te llamen puedas estar en la puerta del local
+                        en forma rápida y segura. Este radio previsto es normalmente entre varias cuadras alrededor, lo
+                        que te permite esperar en el auto o pasear por la zona hasta que te llamen para ingresar.
+                        Además, podrás ver la demora que falta para que tu mesa esté lista en tiempo real, para que
+                        sepas cuando tenes que ir aproximándote al establecimiento.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Qué ocurre si me demoro cuando me llaman o llego tarde a una reserva?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        En caso de encontrarte en fila y que te llamen, informando que tu mesa está lista, y vos te
+                        encuentres demorado, WOKI te ofrece la posibilidad de informarle al restaurante que llegarás con
+                        un ligero retraso, sin especificar el motivo. El comercio puede esperarte con la mesa lista, o
+                        asignársela al próximo grupo en fila, y volver a colocarte en espera, otorgándote la siguiente
+                        mesa que se libere. Por otro lado, llegar tarde a una reserva involucra un retraso mayor al
+                        tiempo de tolerancia preestablecido por el restaurante. En este caso, probablemente el local te
+                        envíe un mensaje preguntando si venís, pudiendo contestar por Sí o por No, y podría tomar la
+                        decisión de revocarte la prioridad de ingreso, en caso de haber comensales en espera. La
+                        decisión final dependerá exclusivamente del restaurante.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ¿Qué hago si no puedo cumplir con mi reserva? 
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si te surgieron complicaciones para acudir a tu reserva por el motivo que fuere, WOKI te permite
+                        cancelar tu reserva en todo momento previo al inicio de la misma. Para ayudarnos a mantener un
+                        nivel óptimo de funcionamiento y servicio con nuestros clientes y restaurantes, recomendamos
+                        realizar cancelaciones con al menos 60 minutos de anticipación, el día de la reservación. Tener
+                        en cuenta que realizar cancelaciones con menor anticipación impacta negativamente en tu
+                        puntuación como cliente, y hay restaurantes más reacios que otros a aceptar reservas de clientes
+                        con baja puntuación.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        ¿Qué hacer si me eliminan de la fila o me anulan una reserva?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si usted no salió manualmente de la fila o canceló su reserva, pero recibe una notificación de
+                        que lo eliminaron de la fila o su reserva fue dada de baja, quiere decir que el restaurante tomó
+                        esa decisión. Esto puede ser un accidente o tratarse de una acción intencional, donde surgió
+                        algún problema particular con su reserva u ocurrió algo que afectó la disponibilidad del
+                        restaurante para recibirlo (por ejemplo, problemas climáticos , sector en refacción, cierre
+                        imprevisto, etc.). 
+                        En estos casos, se recomienda contactar directamente con el restaurante, por el medio que crea
+                        más conveniente (ir al local, teléfono, mail, etc.), para poder restituir su posición en la fila
+                        o correspondiente reserva.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Inasistencias
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Las inasistencias son muy perjudiciales para los restaurantes que operan con modalidad de
+                        reservas, por lo que no cumplir con las mismas se traduce en la peor puntuación posible para el
+                        cliente, provocando que varias salidas cumplidas exitosamente se vean opacadas por una sola
+                        inasistencia en el puntaje general. Los clientes con puntajes muy bajos tienden a ser rechazados
+                        en la mayoría de los locales y deben esforzarse para poder revertir su situación.
+                        Tenga en cuenta que si no puede cumplir con su reserva, y no realiza la cancelación
+                        correspondiente en tiempo y forma, el restaurante tiene la libertad de calificar al usuario por
+                        su reserva como inasistencia, sin ningún tipo de restricción. Si esto último ocurre y usted sí
+                        acudió a su reserva, debe darlo a conocer al encargado de asignar las reservas, para que
+                        revierta su decisión.
+                        Si realizó una reserva y la cumplió, pero se registró como una inasistencia por error, por
+                        favor, póngase en contacto con nuestro equipo de soporte (link para ir a contacto). Realizaremos
+                        una investigación de lo ocurrido, y ajustaremos su puntaje de reservas de manera
+                        correspondiente.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="#"><img src="img/logo-azulyblanco.svg" alt="Logo woki"></a>
+        <div class="flex-soporte">
+            <dl>
+                Comunicate con nosotros
+                <dt><br>Depto. comercial</dt>
+                <dd><a href="mailto:partners@woki.ar">partners@woki.ar</a> <br>
+                    <a href="tel:2235945282">2236843654</a>
+                </dd>
+                <dt><br> Depto. Técnico</dt>
+                <dd><a href="mailto:soporte@woki.ar">soporte@woki.ar</a> <br>
+                    <a href="tel:2235945282">2236843654</a>
+                </dd>
+            </dl>
+            <dl>
+                Redes
+                <dt><br> Buscanos en nuestras redes</dt>
+                <dd><br></dd>
+                <dd><a href="https://www.facebook.com/WokiOficial/" target="_blank">Facebook</a></dd>
+                <dd><a href="https://twitter.com/wokioficial" target="_blank">Twitter</a></dd>
+                <dd><a href="https://www.instagram.com/wokioficial/" target="_blank">Instagram</a></dd>
+                <dd><a href="https://www.youtube.com/channel/UCnGS8X2w3mGqAhhcq2nws7A" target="_blank">Youtube</a></dd>
+            </dl>
+            <p><a href="#">Políticas de privacidad</a>
+                <br>
+                <br>
+                <a href="#">Términos y condiciones</a>
+            </p>
+        </div>
+    </footer>
+    <script src="./js/app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+ul{
+    padding: 0;
+    margin: 0;
+    margin-right: 0.5em;
+}
+header nav ul li.register{
+    padding: 0.2em 0em;
+}
+
+main{
+    margin: 1em;
+}
+.titulo{
+    color: #0076FF;
+    font-size: 1.9em;
+}
+.accordion-button{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 700px){
+    main{
+        margin: 0em 4em;
+    }
+    .titulo{
+        font-size: 3em;
+        margin: 1em 0em
+    }
+}
